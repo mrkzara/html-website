@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCAS | ORG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo" src="logo.png">
+        <ul class="nav-links">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">What we do</a></li>
+            <li><a href="#">Services</a></li>
+            <li class="ctn"><a href="#">Contact</a></li>
+        </ul>
+        <img src="list.png" alt="" class="menu-btn">
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Batangas College of Arts and Sciences Inc.</h2>
+            <div class="line"></div>
+            <h1>Be one of us, Be a BCASIAN.</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+    <section>
+        <div class="title">
+        <h1>Founders of BCAS</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="SirDC.jpg" alt="">
+                <h4>Jose R De Castro, EdD<br>
+                Chairman, Board of Directors</h4>
+            </div>
+        </div>
+    </section>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        const logo = document.querySelector(".logo");
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+            logo.classList.toggle("hidden");
+        })
+    </script>
+</body>
+</html>
